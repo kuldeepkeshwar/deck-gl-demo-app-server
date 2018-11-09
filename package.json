@@ -1,0 +1,18 @@
+{
+  "name": "deck-gl-demo-server",
+  "version": "1.0.0",
+  "description": "server for deck-gl-demo",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "json2csv": "^4.3.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start-local": "PORT=9090 node src/index.js"
+  }
+}
