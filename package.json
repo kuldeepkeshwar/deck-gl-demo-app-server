@@ -5,15 +5,13 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "axios": "^0.18.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "request": "^2.88.0"
   },
-  "devDependencies": {
-    "json2csv": "^4.3.0"
-  },
+  "devDependencies": {},
   "scripts": {
-    "start": "node src/index.js",
-    "start-local": "PORT=9090 node src/index.js"
+    "start": "PORT=9090 node src/index.js"
   }
 }
