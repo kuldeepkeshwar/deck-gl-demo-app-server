@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "src/lambda.js", "use": "@now/node" }
+    { "src": "src/api/*.js", "use": "@now/node" }
   ],
   "github": {
     "enabled": true

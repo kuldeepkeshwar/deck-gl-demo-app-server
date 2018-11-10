@@ -1,15 +1,14 @@
 const cors = require('cors')
 const express = require("express");
-const lambda = require("./lambda");
+const file = require("./api/file");
+const ping = require("./api/ping");
 const app = express();
 const port = process.env.PORT;
 
 app.use(cors());
 
-app.get('ping', (req, res) => {
-  res.end('pong!!');
-})
-app.get("/data/:filename", lambda);
+app.get('ping', ping)
+app.get("/data/:filename", file);
 app.use(function(err, req, res, next) {
   console.error(err.stack);
   res.status(500).send("Something broke!");
