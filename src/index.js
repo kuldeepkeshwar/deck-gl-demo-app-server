@@ -1,7 +1,7 @@
 const cors = require('cors')
 const express = require("express");
-const file = require("./api/file");
-const ping = require("./api/ping");
+const file = require("../api/file");
+const ping = require("../api/ping");
 const app = express();
 const port = process.env.PORT;
 

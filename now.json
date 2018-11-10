@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "src/api/*.js", "use": "@now/node" }
+    { "src": "api/**/*.js", "use": "@now/node" }
   ],
   "github": {
     "enabled": true
