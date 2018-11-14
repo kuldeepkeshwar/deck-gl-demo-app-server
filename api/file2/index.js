@@ -13,10 +13,10 @@ files.forEach(name=>{
     }else{
       console.log("error in building cache",response);
     }
-})});
+  })
+});
 module.exports = function(req, res) {
-    const { query } = parse(req.url, true);
-    const {name} = query;
+    const name=req.params.filename;
     console.log(`starting streaming ${name}`)  
     if(cache[name]){
       res.end(cache[name])

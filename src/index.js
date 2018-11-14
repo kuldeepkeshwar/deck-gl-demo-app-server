@@ -8,7 +8,7 @@ const port = process.env.PORT;
 app.use(cors());
 
 app.get('ping', ping)
-app.get("/data/:filename", file);
+app.get("/data/:name", file);
 app.use(function(err, req, res, next) {
   console.error(err.stack);
   res.status(500).send("Something broke!");

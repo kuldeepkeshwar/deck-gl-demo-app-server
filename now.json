@@ -1,8 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    { "src": "api/**/*.js", "use": "@now/node" }
-  ],
+  "name":"deck-gl-demo-app-server",
+  "version": 1,
+  "alias": ["deck-gl-demo-app-server"],
+  "files": ["src/index.js", "api", "package.json", "yarn.lock"],
   "github": {
     "enabled": true
   }
